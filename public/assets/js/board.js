@@ -51,7 +51,7 @@ function createCards(cards) {
 
   let $cardLis = cards.map(function(card) {
     let $cardLi = $('<li>');
-    let $cardButton = $('<button>').text(card.text);
+    let $cardButton = $('<button>').text(card.text)
       .text(card.text)
       .data(card)
       .on('click', openCardEditModal);
@@ -115,11 +115,11 @@ function makeSortable() {
     animation: 150,
     ghostClass: 'ghost',
     filter: '.add',
-    easing: 'cubic-bezier(0.785, 0.135, 0.15, 0.86)'
+    easing: 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',    
     onMove: function(event) {
       let shouldMove = !$(event.related).hasClass('add');
       return shouldMove;
-    }
+    }, 
     onEnd: function(event) {
       let { id, position } = $(event.item).data();
       let newPosition = event.newIndex + 1;
