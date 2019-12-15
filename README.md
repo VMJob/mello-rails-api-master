@@ -4,7 +4,7 @@ This is a front-end version of Mello App that connects to a Rails back end which
 
 
 
-<img src="screenshot.png" alt="mello-rails Screenshot">
+<img src="screenshot.PNG" alt="mello-rails Screenshot">
 
 https://vjmello-rails.herokuapp.com/
 
